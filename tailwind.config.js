@@ -10,7 +10,11 @@ module.exports = {
       center: true,
       padding: "25px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat, sans-serif", "system-ui"],
+      },
+    },
   },
   plugins: [],
 };
