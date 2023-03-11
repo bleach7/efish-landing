@@ -5,8 +5,8 @@ import {
   TurnoverIcon,
   UserIcon,
 } from "@/assets/icons";
+import { Heading, Link } from "@/components";
 import { withAppLayout } from "@/hocs";
-import Link from "next/link";
 
 const Home = () => {
   return (
@@ -15,20 +15,16 @@ const Home = () => {
         <div className="container">
           <div className="overflow-hidden rounded-[10px] bg-[#D3E7FB] bg-home-hero bg-cover bg-center bg-no-repeat shadow-[0px_8px_50px_rgba(210,232,254,0.4)]">
             <div className="px-[60px] py-[143px]">
-              <h1 className="mb-[10px] max-w-[615px] text-[36px] font-semibold uppercase leading-[48px]">
+              <Heading as="h1" className="mb-[10px] max-w-[615px]">
                 Мониторинг рыб и других водных животных
-              </h1>
+              </Heading>
               <p className="mb-[50px] max-w-[595px]">
                 Предназначена для своевременного сбора и обработки информации о
                 добытой, закупленной, искусственно выращенной рыбе или других
                 водных животных
               </p>
-              <Link
-                href="/#"
-                className="grid w-fit grid-cols-[1fr_20px] items-center gap-x-[10px] rounded-[44px] bg-[#52A5FC] py-[15px] px-[30px] font-medium text-white shadow-[0px_8px_50px_rgba(82,165,252,0.7)]"
-              >
-                <span>Войти в систему</span>
-                <UserIcon className="h-auto w-full" />
+              <Link href="#" appearance="button" shadow="blue" icon={UserIcon}>
+                Войти в систему
               </Link>
             </div>
           </div>
@@ -37,9 +33,9 @@ const Home = () => {
       <section className="mb-[70px]">
         <div className="container">
           <div>
-            <h2 className="mb-[15px] text-[36px] font-semibold uppercase leading-[48px]">
+            <Heading as="h2" className="mb-[15px]">
               О системе
-            </h2>
+            </Heading>
             <div className="mb-[30px] flex flex-col gap-y-[30px]">
               <p>
                 Информационная система мониторинга рыб и других водных животных
@@ -58,12 +54,8 @@ const Home = () => {
                 водных животных, экспорте и импорте в информационную систему
               </p>
             </div>
-            <Link
-              href="#instruction"
-              className="grid w-fit grid-cols-[1fr_20px] items-center gap-x-[10px] rounded-[44px] bg-[#52A5FC] py-[15px] px-[30px] font-medium text-white"
-            >
-              <span>Скачать инструкции</span>
-              <PointerIcon className="h-auto w-full" />
+            <Link href="#instruction" appearance="button" icon={PointerIcon}>
+              Скачать инструкции
             </Link>
           </div>
         </div>
