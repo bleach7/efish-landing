@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat, sans-serif", "system-ui"],
       },
+      backgroundImage: {
+        "home-hero": ["url('/imgs/home-hero.jpg')"],
+      },
     },
   },
   plugins: [],

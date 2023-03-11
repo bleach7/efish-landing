@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/montserrat': ^4.5.14
+  '@headlessui/react': ^1.7.13
   '@types/node': 18.15.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': ^5.54.1
   '@typescript-eslint/parser': ^5.54.1
   autoprefixer: ^10.4.14
+  classnames: ^2.3.2
   eslint: 8.35.0
   eslint-config-next: 13.2.4
   eslint-config-prettier: ^8.7.0
@@ -21,6 +23,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.4
   react: 18.2.0
   react-dom: 18.2.0
+  react-icons: ^4.8.0
   stylelint: ^15.2.0
   stylelint-config-rational-order-fix: ^0.1.9
   stylelint-config-recommended: ^10.0.1
@@ -31,13 +34,16 @@ specifiers:
 
 dependencies:
   '@fontsource/montserrat': 4.5.14
+  '@headlessui/react': 1.7.13_biqbaboplfbrettd7655fr4n2y
   '@types/node': 18.15.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
+  classnames: 2.3.2
   eslint-config-next: 13.2.4_ycpbpc6yetojsgtrx3mwntkhsu
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.8.0_react@18.2.0
   typescript: 4.9.5
 
 devDependencies:
@@ -148,6 +154,18 @@ packages:
 
   /@fontsource/montserrat/4.5.14:
     resolution: {integrity: sha512-fTvrteVzuFUePhr4QYBGoK8G/YHLJ3IhF1HhKg0AxcFvZajJT7rM7ULdmKLSd2PkX44R3aaFZq1zDbmjbGGI+w==}
+    dev: false
+
+  /@headlessui/react/1.7.13_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-9n+EQKRtD9266xIHXdY5MfiXPDfYwl7zBM7KOx2Ae3Gdgxy8QML1FkCMjq6AsOf0l6N9uvI4HcFtuFlenaldKg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:
@@ -779,6 +797,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -2587,6 +2609,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.8.0_react@18.2.0:
+    resolution: {integrity: sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:

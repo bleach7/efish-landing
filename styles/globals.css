@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *::selection {
-  @apply bg-black text-white;
+  @apply bg-[#52A5FC] text-white;
 }
 
 html {
@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply rounded bg-black;
+  @apply rounded bg-[#52A5FC];
 }
 
 body::-webkit-scrollbar-track {
@@ -28,9 +28,13 @@ body {
 }
 
 body {
-  @apply bg-white font-montserrat text-[16px] font-normal leading-[21px] text-black;
+  @apply bg-white font-montserrat text-[16px] font-normal leading-[21px] text-[#0A091D];
 }
 
 #__next {
   @apply flex min-h-full flex-col overflow-hidden;
+}
+
+.container {
+  @apply xl:max-w-[1250px];
 }
